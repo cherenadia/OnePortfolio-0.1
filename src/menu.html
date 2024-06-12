@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnePortfolio</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; img-src 'self' data:;">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="font-awesome/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+    <div class="nav-container">
+        <nav>
+            <ul>
+                <li class="user-filter">
+                    <span id="userMenuBtn" class="filter-btn"><i class="fas fa-user"></i> Username</span>
+                    <div class="user-dropdown-content" id="userDropdownContent">
+                        <a href="registration.html"><i class="fas fa-sign-out-alt"></i> Выйти</a>
+                    </div>
+                </li>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="about.html">О себе</a></li>
+                <li><a href="settings.html">Настройки</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="container_filter">
+        <input type="text" id="searchInput" placeholder="Поиск проектов...">
+    </div>
+    
+
+    <h1>Проекты</h1>
+    <button id="create-project-btn">Создать проект</button>
+    <div id="projects-container"></div>
+
+    <script src="menu.js"></script>
+</body>
+</html>

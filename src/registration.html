@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnePortfolio</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'">
+    <link rel="stylesheet" href="registration.css">
+    <link rel="stylesheet" href="font-awesome/css/all.min.css"> 
+</head>
+<body>
+    <div class="container">
+        <h2>Регистрация</h2>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="email">Электронная почта</label>
+                <input type="email" id="email" name="email"  placeholder="you@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Пароль</label>
+                <input type="password" id="password" name="password" placeholder="Введите пароль" required>
+                <p class="disclaimer">Нажимая «Зарегистрироваться», я подтверждаю, что ознакомился с положениями, указанными в статьях 
+                    <span class="blue">Условия использования</span> и <span class="blue">Политика конфиденциальности</span></p>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Зарегистрироваться">
+            </div>
+        </form>
+        <p class="login-link">Уже есть учетная запись? <a href="login.html" class="color-text">Войти</a></p>
+        <div class="social-icons">
+            <a href="#" class="icon"><i class="fab fa-google" style="color: #3498db;"></i></a>
+        </div>
+    </div>
+
+    <script src="registration.js"></script> 
+</body>
+</html>

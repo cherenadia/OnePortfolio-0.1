@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Настройки | OnePortfolio</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'">
+    <link rel="stylesheet" href="settings.css">
+    <link rel="stylesheet" href="font-awesome/css/all.min.css"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+    <div class="nav-container">
+        <nav>
+            <ul>
+                <li class="user-filter">
+                    <span id="userMenuBtn" class="filter-btn"><i class="fas fa-user"></i> Username</span>
+                    <div class="user-dropdown-content" id="userDropdownContent">
+                        <a href="registration.html"><i class="fas fa-sign-out-alt"></i> Выйти</a>
+                    </div>
+                </li>
+                <li><a href="menu.html">Главная</a></li>
+                <li><a href="about.html">О себе</a></li>
+                <li><a href="settings.html">Настройки</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="settings-container">
+        <h1>Настройки</h1>
+        <form id="settingsForm">
+            <div class="form-group">
+                <label for="email">Электронная почта</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Новый пароль</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Подтвердите новый пароль</label>
+                <input type="password" id="confirmPassword" name="confirmPassword">
+            </div>
+            <button type="submit">Сохранить изменения</button>
+        </form>
+        <button id="deleteAccountBtn">Удалить аккаунт</button>
+        <div id="successMessage" class="hidden">Настройки успешно сохранены!</div>
+    </div>
+    <script src="settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('img_2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #888;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center; 
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    text-align: left; 
+}
+
+input[type="email"],
+input[type="password"] {
+    padding: 12px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: transparent;
+    color: #888;
+    margin: 0 auto 20px; 
+    display: block; 
+    width: 100%; 
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+    color: #ccc;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-bottom-color: #3498db; 
+    animation: inputFocus 0.5s ease;
+}
+
+@keyframes inputFocus {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+input[type="email"]:focus::placeholder,
+input[type="password"]:focus::placeholder {
+    color: transparent;
+}
+
+input[type="submit"] {
+    background-color: #fd4a7c; 
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 20px auto 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #d5395b;
+    color: #fff;
+    animation: buttonHover 0.3s ease;
+}
+
+@keyframes buttonHover {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+h2 {
+    margin-top: 0;
+    color: transparent;
+    text-align: center;
+    margin-bottom: 30px;
+    background-image: linear-gradient(to right, #de2a5d, #ff6c8c);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+  
+
+.color-text {
+    color: #ff6c8c;
+}
+
+.registration-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.registration-link a {
+    color: #ff6c8c;
+    text-decoration: none;
+    transition: text-decoration 0.3s; 
+}
+
+.registration-link a:hover {
+    text-decoration: underline; 
+}
+
+.social-icons {
+    margin-top: 20px; 
+}
+
+.social-icons .icon {
+    margin-right: 10px; 
+    margin-left: 10px;
+    font-size: 24px; 
+}
+
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

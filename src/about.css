@@ -1,0 +1,322 @@
+/* create-project.css */
+/* Сброс некоторых стандартных стилей для более чистого вида */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+}
+
+/* Контейнер для навигации */
+.nav-container {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+/* Центровка навигационного меню */
+.nav-container nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-container nav ul li {
+    margin: 0 15px;
+}
+
+.nav-container nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s ease;
+    font-weight: 700;
+}
+
+.nav-container nav ul li a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+.user-filter {
+    position: relative;
+}
+
+.user-filter {
+    position: relative;
+}
+
+/* Стили для кнопки пользователя */
+.filter-btn {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.filter-btn i {
+    margin-right: 5px;
+}
+
+/* Стили для выпадающего меню пользователя */
+.user-dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    min-width: 120px;
+    z-index: 1;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-dropdown-content a {
+    color: #444;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+}
+
+.user-dropdown-content a:hover {
+    background-color: #e9e9e9;
+    border-radius: 4px;
+}
+
+/* Показываем выпадающее меню, когда кнопка активирована */
+.user-filter:hover .user-dropdown-content {
+    display: block;
+}
+
+
+
+/* Стили для контактной информации */
+.portfolio-contact p {
+    margin-bottom: 10px;
+}
+
+.portfolio-contact span {
+    border-bottom: 1px dashed #333;
+    cursor: pointer;
+}
+
+.portfolio-contact span:hover {
+    color: #555;
+}
+
+.portfolio-description {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для заголовка */
+.portfolio-description h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px; 
+}
+
+/* Стили для текстового поля */
+.portfolio-description textarea {
+    width: 96%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
+}
+
+.profile-image-container {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; 
+    overflow: hidden; 
+    background-color: #ccc; 
+    margin: 0 auto;
+    position: relative; 
+}
+
+.portfolio-image {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px 0; 
+    background-color: #f4f4f9;
+}
+
+/* Стили для ника */
+.portfolio-image p {
+    margin-top: 10px; 
+    text-align: center; 
+}
+
+.portfolio-image p span {
+    border-bottom: 1px dashed #333;
+    cursor: pointer;
+}
+
+.portfolio-image p span:hover {
+    color: #555;
+}
+
+.image-wrapper {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #ccc;
+    position: relative;
+}
+
+#uploadedImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Стили для контактной информации */
+.portfolio-contact {
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+/* Стили для краткого описания */
+.portfolio-description {
+    margin: 20px auto; 
+    max-width: 600px; 
+    background-color: #fff; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.editable {
+    display: inline-block;
+}
+
+.edit-form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.edit-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.edit-form input, .edit-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button#saveProfileBtn {
+    background-color: #555; /* Серый цвет */
+    color: white;
+}
+
+button#saveProfileBtn:hover {
+    background-color: #666; /* Более светлый серый при наведении */
+    transform: scale(1.05);
+}
+
+button#editProfileBtn {
+    background-color: #333; /* Темно-серый цвет */
+    color: white;
+}
+
+button#editProfileBtn:hover {
+    background-color: #444; /* Более светлый темно-серый при наведении */
+    transform: scale(1.05);
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover, .close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

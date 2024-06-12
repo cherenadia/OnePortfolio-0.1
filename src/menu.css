@@ -1,0 +1,299 @@
+/* Подключение локального шрифта Roboto */
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/roboto-regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/roboto-bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Контейнер для навигации */
+.nav-container {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+/* Центровка навигационного меню */
+.nav-container nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-container nav ul li {
+    margin: 0 15px;
+}
+
+.nav-container nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s ease;
+    font-weight: 700;
+}
+
+.nav-container nav ul li a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/* Контейнер для поиска и фильтра */
+.container_filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+#searchInput {
+    width: 500px;
+    padding: 8px;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 30px;
+}
+
+
+#categoryFilter {
+    width: 150px;
+    padding: 8px;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Стили для кнопки пользователя и выпадающего меню */
+.user-filter {
+    position: relative;
+}
+
+/* Стили для кнопки пользователя */
+.filter-btn {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.filter-btn i {
+    margin-right: 5px;
+}
+
+/* Стили для выпадающего меню пользователя */
+.user-dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    min-width: 120px;
+    z-index: 1;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-dropdown-content a {
+    color: #444;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+}
+
+.user-dropdown-content a:hover {
+    background-color: #e9e9e9;
+    border-radius: 4px;
+}
+
+/* Показываем выпадающее меню, когда кнопка активирована */
+.user-filter:hover .user-dropdown-content {
+    display: block;
+}
+
+/* Контейнер для проектов */
+#projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start; /* Центровка проектов */
+}
+
+/* Стили для проекта */
+.project {
+    flex: 0 1 calc(33.333% - 10px); /* Три проекта в ряду с учетом отступа */
+    box-sizing: border-box; /* Включаем отступы и границы в ширину */
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    text-align: center; /* Центровка содержимого */
+}
+
+
+/* Отступ у первого проекта */
+.project:first-child {
+    margin-left: 12px;
+}
+
+.project img {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 2px;
+}
+
+.project h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif; /* Используем шрифт Roboto */
+    font-weight: 700; /* Полужирный текст */
+    font-size: 24px; /* Размер текста */
+    color: #333; /* Цвет текста - темный серый */
+    margin-bottom: 20px; /* Отступ снизу */
+    margin-left: 10px;
+}
+
+
+#create-project-btn {
+    background-color: #333; /* Серый фон */
+    color: #fff; /* Белый текст */
+    border: none; /* Убираем границу */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    border-radius: 4px; /* Закругленные углы */
+    font-family: 'Roboto', sans-serif; /* Используем шрифт Roboto */
+    font-weight: 700; /* Полужирный текст */
+    font-size: 16px; /* Размер текста */
+    cursor: pointer; /* Указатель при наведении */
+    transition: background-color 0.3s ease; /* Плавный переход для фона */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    margin-left: 12px;
+    margin-bottom: 10px; 
+}
+
+#create-project-btn:hover {
+    background-color: #555; /* Темно-серый при наведении */
+}
+
+#create-project-btn:active {
+    background-color: #444; /* Еще более темный серый при нажатии */
+}
+
+#create-project-btn:focus {
+    outline: none; /* Убираем стандартный outline */
+    box-shadow: 0 0 0 3px rgba(102, 102, 102, 0.5); /* Добавляем эффект фокуса */
+}
+
+
+/* Стили для кнопки лайка */
+.like-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #f00; /* Красный цвет */
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Увеличение размера иконки лайка */
+.fas.fa-heart {
+    font-size: 16px; /* Размер 18 пикселя */
+}
+
+/* Стили для количества лайков */
+.like-count {
+    margin-left: 5px;
+    color: #666; /* Серый цвет */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+/* Стили для кнопки удаления */
+.delete-project-btn {
+    background-color: rgb(255, 255, 255); /* Красный цвет фона */
+    color: #333; /* Белый цвет текста */
+    border: none; /* Удаление границы */
+    padding: 8px 15px; /* Отступы внутри кнопки */
+    border-radius: 4px; /* Закругление углов */
+    cursor: pointer; /* Изменение курсора при наведении */
+}
+
+/* Стили при наведении на кнопку удаления */
+.delete-project-btn:hover {
+    background-color: #c00; /* Изменение цвета фона при наведении */
+}
+
+.view-project-btn {
+    background-color: #333; /* Серый фон */
+    color: #fff; /* Белый текст */
+    border: none; /* Убираем границу */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    border-radius: 4px; /* Закругленные углы */
+    font-family: 'Roboto', sans-serif; /* Используем шрифт Roboto */
+    font-size: 12px; /* Размер текста */
+    cursor: pointer; /* Указатель при наведении */
+    transition: background-color 0.3s ease; /* Плавный переход для фона */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    margin-left: 12px;
+    margin-bottom: 10px; 
+  }
+  
+  .view-project-btn:hover {
+    background-color: #555;
+  }
+  
+
+/* Стили для кнопки редактирования */
+.edit-project-btn {
+    background-color: rgb(255, 255, 255); /* Синий цвет фона */
+    color: #333; /* Белый цвет текста */
+    border: none; /* Удаление границы */
+    padding: 8px 15px; /* Отступы внутри кнопки */
+    border-radius: 4px; /* Закругление углов */
+    cursor: pointer; /* Изменение курсора при наведении */
+}
+
+/* Стили при наведении на кнопку редактирования */
+.edit-project-btn:hover {
+    background-color: #007bff; /* Изменение цвета фона при наведении */
+}

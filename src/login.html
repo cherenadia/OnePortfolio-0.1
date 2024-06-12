@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnePortfolio</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="font-awesome/css/all.min.css"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+    <div class="container">
+        <h2>Вход</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="email">Электронная почта</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Пароль</label>
+                <input type="password" id="password" name="password" placeholder="Введите пароль" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Войти">
+            </div>
+        </form>
+        <p class="registration-link">Еще не зарегистрированы? <a href="registration.html" class="color-text">Зарегистрируйтесь здесь</a></p>
+        <div class="social-icons">
+            <a href="#" class="icon"><i class="fab fa-google" style="color: #de2a5d;"></i></a>
+        </div>
+    </div>
+
+    <script src="login.js"></script> 
+</body>
+</html>

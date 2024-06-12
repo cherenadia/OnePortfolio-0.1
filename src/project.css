@@ -1,0 +1,110 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: #333; /* Темно-серый цвет текста */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444; /* Цвет заголовка чуть более темный */
+}
+
+#create-project-form {
+    max-width: 600px; /* Увеличение максимальной ширины */
+    margin: 20px auto; /* Центрирование контейнера и добавление отступов сверху и снизу */
+    padding: 40px; /* Увеличение внутренних отступов для более просторного вида */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+#create-project-form input[type="text"],
+#create-project-form input[type="file"],
+#create-project-form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+#create-project-form button {
+    background-color: #666; /* Средний оттенок серого */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#create-project-form button:hover {
+    background-color: #555; /* Чуть более темный оттенок серого при наведении */
+}
+
+#back-to-menu-btn {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    text-decoration: none;
+    color: #fff;
+    background-color: #444; /* Темно-серый цвет */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    width: fit-content;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#back-to-menu-btn:hover {
+    background-color: #333; /* Чуть более темный оттенок серого при наведении */
+}
+
+
+/* Стили для модального окна */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Стили для содержимого модального окна */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* Стили для кнопки закрытия */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#project-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  

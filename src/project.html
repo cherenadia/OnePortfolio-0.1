@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnePortfolio</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; img-src 'self' data:">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="font-awesome/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<body>
+  <div class="container">
+    <h1>Настройка проекта</h1>
+    <form id="create-project-form">
+      <input type="text" id="project-name" placeholder="Название проекта">
+      <input type="file" id="project-image">
+      <div id="project-image-container"></div> <!-- Контейнер для отображения выбранного изображения -->
+      <button id="save-project-btn">Сохранить проект</button>
+      <a href="menu.html" id="back-to-menu-btn">Вернуться назад</a>
+      <div id="success-modal" class="modal">
+        <div class="modal-content">
+          <span id="close-modal" class="close">&times;</span>
+          <p>Проект успешно сохранен!</p>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <script src="project.js"></script>
+</body>
+</html>
